@@ -7,7 +7,7 @@ import com.techyourchance.testdrivendevelopment.example11.networking.GetCartItem
 import java.util.ArrayList;
 import java.util.List;
 
-public class FetchCartItemsUseCase {
+public class  FetchCartItemsUseCase {
 
     public interface Listener {
         void onCartItemsFetched(List<CartItem> capture);

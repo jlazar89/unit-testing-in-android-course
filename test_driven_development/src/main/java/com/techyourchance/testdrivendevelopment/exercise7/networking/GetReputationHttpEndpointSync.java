@@ -3,22 +3,22 @@ package com.techyourchance.testdrivendevelopment.exercise7.networking;
 
 public interface GetReputationHttpEndpointSync {
 
-    enum EndpointStatus {
+    enum Status {
         SUCCESS,
         GENERAL_ERROR,
         NETWORK_ERROR
     }
 
     class EndpointResult {
-        private final EndpointStatus mEndpointStatus;
+        private final Status mEndpointStatus;
         private final int mReputation;
 
-        public EndpointResult(EndpointStatus endpointStatus, int reputation) {
+        public EndpointResult(Status endpointStatus, int reputation) {
             mEndpointStatus = endpointStatus;
             mReputation = reputation;
         }
 
-        public EndpointStatus getStatus() {
+        public Status getStatus() {
             return mEndpointStatus;
         }
 
